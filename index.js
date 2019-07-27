@@ -48,7 +48,7 @@ const HelloWorldIntentHandler = {
 const GetNewFactIntentHandler = {
     canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-            && handlerInput.requestEnvelope.request.intent.name === 'GetNewFactIntent';
+            && handlerInput.requestEnvelope.request.intent.name === 'GetFactIntent';
     },
     handle(handlerInput) {
         
